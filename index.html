@@ -20,24 +20,53 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/section_header.css" />
-    <link rel="stylesheet" href="./css/section_hero.css" />
-    <link rel="stylesheet" href="./css/section_values.css" />
-    <link rel="stylesheet" href="./css/section_doing.css" />
-    <link rel="stylesheet" href="./css/section_team.css" />
-    <link rel="stylesheet" href="./css/section_customers.css" />
-    <link rel="stylesheet" href="./css/section_footer.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Web Studio</title>
   </head>
   <body>
-    <header><h1 class="header">header</h1></header>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-nav__logo"
+            >Web<span class="header-nav__logo-studio">Studio</span></a
+          >
+          <ul class="header-nav__list">
+            <li class="header-nav__list-link">
+              <a href="./index.html">Studio</a>
+            </li>
+            <li class="header-nav__list-link">
+              <a href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-nav__list-link"><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-menu-btn button">
+          <svg class="mobile-menu-open-icon" width="32" height="32">
+            <use
+              href="./img/icons.svg#icon-menu-burger"
+              aria-label="Open mobile menu"
+            ></use>
+          </svg>
+        </button>
+
+        <adress class="header-adress">
+          <ul class="header-adress__list">
+            <li class="header-adress__list-item">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="header-adress__list-item">
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </adress>
+      </div>
+    </header>
 
     <main>
-      <section><h2 class="section-hero">section hero</h2></section>
-      <section><h2 class="section-value">section value</h2></section>
+      <section></section>
+      <section></section>
       <section></section>
       <section></section>
       <section></section>
