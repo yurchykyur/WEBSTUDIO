@@ -48,7 +48,9 @@ body.modal-open {
 // End global styles and container
 
 @import 'section_header.scss';
+@import 'mobile_menu.scss';
 @import 'section_hero.scss';
+@import 'modal_menu.scss';
 @import 'section_values.scss';
 @import 'section_doing.scss';
 @import 'section_team.scss';
