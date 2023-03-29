@@ -24,7 +24,10 @@
 
 .mobile-menu__container {
     position: relative;
+    display: flex;
+    flex-direction: column;
     max-width: 428px;
+    height: 100vh;
     margin-right: auto;
     margin-left: auto;
     padding: 80px 16px 40px 40px;
@@ -64,9 +67,8 @@
 
 .mobile-menu__nav {
     display: block;
+    margin-bottom: auto;
 }
-
-.mobile-menu__nav-list {}
 
 .mobile-menu__nav-item {
     margin-bottom: 40px;
@@ -93,8 +95,6 @@
 
     margin-bottom: 48px;
 }
-
-.mobile-menu__adress-list {}
 
 .mobile-menu__adress-item {
 
@@ -145,5 +145,17 @@
     &:hover,
     &:focus {
         background-color: var(--pressed-state-color-ocean);
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .mobile-menu__nav-link {
+        font-size: calc(100vw / 428 * 36);
+    }
+
+    .mobile-menu__adress-item {
+        .tel {
+            font-size: calc(100vw / 428 * 36);
+        }
     }
 }
