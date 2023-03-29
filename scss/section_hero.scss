@@ -80,7 +80,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     line-height: 1.07;
     text-transform: none;
   }
-
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -104,9 +103,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         var(--overlay-hero-image)),
       url('../img/backgroung-hero-2-tablet-@2x.jpg');
   }
-
 }
-
 
 @media screen and (min-width: 1200px) {
   .hero {
