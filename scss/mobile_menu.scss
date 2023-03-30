@@ -96,29 +96,25 @@
     margin-bottom: 48px;
 }
 
-.mobile-menu__adress-item {
-
-    .tel {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--primary-brand-color-iris);
-    }
-
-    .mail {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-
-    &:first-child {
-        margin-bottom: 40px;
-    }
+.mobile-menu__adress-item:first-child {
+    margin-bottom: 40px;
 }
 
+.mobile-menu__adress-tel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-brand-color-iris);
+}
+
+.mobile-menu__adress-mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
 
 .mobile-menu__social {
     max-width: 328px;
@@ -153,9 +149,7 @@
         font-size: calc(100vw / 428 * 36);
     }
 
-    .mobile-menu__adress-item {
-        .tel {
-            font-size: calc(100vw / 428 * 36);
-        }
+    .mobile-menu__adress-tel {
+        font-size: calc(100vw / 428 * 36);
     }
 }

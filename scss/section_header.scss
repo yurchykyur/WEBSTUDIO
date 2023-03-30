@@ -3,16 +3,16 @@
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
 }
 
-.header-nav {
+.navigation {
     display: flex;
 }
 
-.header-nav__logo {
+.navigation__logo {
     display: block;
     padding: 25px 0;
     font-family: 'Raleway', sans-serif;
@@ -24,7 +24,7 @@
     color: var(--primary-brand-color-iris);
 }
 
-.header-nav__logo-studio {
+.navigation__logo-studio {
     color: var(--dark-color-navy-blue);
 }
 
@@ -37,16 +37,16 @@
     border: none;
 }
 
-.mobile-menu-open-icon {
+.mobile-menu__open-icon {
     fill: var(--dark-color-navy-blue);
 }
 
 @media screen and (max-width: 767px) {
-    .header-nav__list {
+    .navigation__list {
         display: none;
     }
 
-    .header-adress {
+    .adress {
         display: none;
     }
 }
@@ -56,12 +56,12 @@
         display: none;
     }
 
-    .header-nav__list {
+    .navigation__list {
         display: flex;
         margin-left: 120px;
     }
 
-    .header-nav__list-link {
+    .navigation__list-link {
         display: block;
         position: relative;
         font-weight: 500;
@@ -116,59 +116,53 @@
         }
     }
 
-    .header-nav__list-item:not(:first-child) {
+    .navigation__list-item:not(:first-child) {
         margin-left: 40px;
     }
 
-    .header-adress {
+    .adress {
         margin-left: auto;
     }
 
-    .header-adress__list-item {
 
-        .link {
-            display: block;
-            font-size: 12px;
-            line-height: 1.17;
-            letter-spacing: 0.04em;
-            transition: color var(--transition-250-cubic);
+    .adress__link {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        transition: color var(--transition-250-cubic);
 
-            &:hover,
-            &:focus {
-                color: var(--pressed-state-color-ocean);
-            }
-        }
-
-        &:first-child {
-            margin-bottom: 12px;
+        &:hover,
+        &:focus {
+            color: var(--pressed-state-color-ocean);
         }
     }
 
+    .adress__item:first-child {
+        margin-bottom: 12px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
 
-    .header-nav__list {
+    .navigation__list {
         margin-left: 76px;
     }
 
-    .header-adress__list-item {
-
-        .link {
-            padding-top: 24px;
-            padding-bottom: 23px;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-        }
-
-        &:first-child {
-            margin-bottom: 0px;
-        }
-    }
-
-    .header-adress__list {
+    .adress__list {
         display: flex;
         column-gap: 40px;
+    }
+
+    .adress__item:first-child {
+        margin-bottom: 0px;
+    }
+
+    .adress__link {
+        padding-top: 24px;
+        padding-bottom: 23px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 }

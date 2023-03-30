@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color-slate);
+    font-size: 16px;
+    background-color: var(--body-background-color);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}

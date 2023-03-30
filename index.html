@@ -26,24 +26,24 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
-        <nav class="header-nav" aria-label="navigation menu">
-          <a href="./index.html" class="header-nav__logo"
-            >Web<span class="header-nav__logo-studio">Studio</span></a
+      <div class="header__container container">
+        <nav class="navigation" aria-label="navigation menu">
+          <a href="./index.html" class="navigation__logo"
+            >Web<span class="navigation__logo-studio">Studio</span></a
           >
-          <ul class="header-nav__list">
-            <li class="header-nav__list-item">
-              <a class="header-nav__list-link current" href="./index.html"
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__list-link current" href="./index.html"
                 >Studio</a
               >
             </li>
-            <li class="header-nav__list-item">
-              <a class="header-nav__list-link" href="./portfolio.html"
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li class="header-nav__list-item">
-              <a class="header-nav__list-link" href="#">Contacts</a>
+            <li class="navigation__list-item">
+              <a class="navigation__list-link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +54,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="mobile-menu-open-icon" width="32" height="22">
+          <svg class="mobile-menu__open-icon" width="32" height="22">
             <use
               href="./img/icons.svg#icon-menu-burger"
               aria-label="Open mobile menu"
@@ -62,18 +62,20 @@
           </svg>
         </button>
 
-        <adress class="header-adress">
-          <ul class="header-adress__list">
-            <li class="header-adress__list-item">
-              <a class="link" href="mailto:info@devstudio.com"
+        <address class="adress">
+          <ul class="adress__list">
+            <li class="adress__item">
+              <a class="adress__link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header-adress__list-item">
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li class="adress__item">
+              <a class="adress__link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
-        </adress>
+        </address>
       </div>
 
       <!-- mobile-menu -->
@@ -105,10 +107,14 @@
           <address class="mobile-menu__adress">
             <ul class="mobile-menu__adress-list">
               <li class="mobile-menu__adress-item">
-                <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                <a class="mobile-menu__adress-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
               <li class="mobile-menu__adress-item">
-                <a class="mail" href="mailto:info@devstudio.com"
+                <a
+                  class="mobile-menu__adress-mail"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -196,10 +202,10 @@
 
       <!-- ========================== Section Value ============== -->
 
-      <section>
+      <section class="value section">
         <div class="container">
-          <h2>our value</h2>
-          <div class="value-wrapper">
+          <h2 class="">our value</h2>
+          <div class="value__wrapper">
             <ul class="value-list">
               <li class="value-list__item">
                 <div class="value-list__item-thumb">
