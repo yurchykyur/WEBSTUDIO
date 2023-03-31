@@ -11,5 +11,19 @@
 @import './base/card-set';
 
 // components
+@import './components/button';
+@import './components/social';
+@import './components/mobile-menu';
+@import './components/modal-form';
+
 
 // layouts
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/value';
+@import './layouts/doing';
+@import './layouts/team';
+@import './layouts/customers';
+@import './layouts/footer';
+@import './layouts/portfolio';
