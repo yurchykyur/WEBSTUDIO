@@ -781,17 +781,27 @@
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">Subscribe</p>
           <form class="footer-subscribe__form">
-            <input
-              class="footer-subscribe__input"
-              type="email"
-              name="subscribe-email"
-              required
-            />
-            <label class="footer-subscribe__label" for="subscribe-email"
-              >E-mail</label
+            <div class="footer-subscribe__wrapper">
+              <input
+                class="footer-subscribe__input"
+                type="email"
+                name="subscribe-email"
+                id="subscribe-email"
+                placeholder=" "
+                required
+              />
+              <label class="footer-subscribe__label" for="subscribe-email"
+                >E-mail</label
+              >
+            </div>
+            <button
+              class="footer-subscribe__button primary-button"
+              type="submit"
             >
-            <button class="footer-subscribe__button" type="submit">
-              Subscribe
+              <span>Subscribe</span
+              ><svg class="icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
