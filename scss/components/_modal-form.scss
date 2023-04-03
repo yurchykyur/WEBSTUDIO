@@ -1,0 +1,27 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    padding-right: 18px;
+    padding-left: 18px;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opasity var(--transition-250-cubic),
+        visability var(--transition-250-cubic);
+    overflow-y: scroll;
+}
+
+.modal__window {
+    position: absolute;
+    top: 96px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 392px;
+    max-height: 586px;
+    background-color: var(--modal-background-color);
+    border-radius: 4px;
+
+    transition: transform var(--transition-250-cubic);
+}

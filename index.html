@@ -194,7 +194,11 @@
       <section class="hero section overlay">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button primary-button" type="button">
+          <button
+            class="hero-button primary-button"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -807,6 +811,95 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop" data-modal>
+      <!-- is-hidden -->
+      <div class="modal__window">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./img/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <p class="modal-form__title">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="modal-form__wrapper-input">
+            <ul class="modal-form__list">
+              <li class="modal-form__item">
+                <label class="modal-form__label" for="user-name">Name</label>
+                <div class="modal-form__inner">
+                  <input
+                    class="modal-form__input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    required
+                    pattern="[a-zA-Z]+"
+                    minlength="2"
+                  />
+                  <svg class="modal-form__input-icon" width="12" height="12">
+                    <use href="./img/icons.svg#icon-input-user-name"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="modal-form__item">
+                <label class="modal-form__label" for="user-phone">Phone</label>
+                <div>
+                  <input
+                    class="modal-form__input"
+                    type="tel"
+                    name="user-phone"
+                    id="user-phone"
+                    required
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                    title="xxx-xxx-xx-xx"
+                  />
+                  <svg class="modal-form__input-icon" width="12" height="12">
+                    <use href="./img/icons.svg#icon-input-user-tel"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="modal-form__item">
+                <label class="modal-form__label" for="user-email">Email</label>
+                <div>
+                  <input
+                    class="modal-form__input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    required
+                  />
+                  <svg class="modal-form__input-icon" width="12" height="12">
+                    <use href="./img/icons.svg#icon-input-user-mail"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+
+            <label class="modal-form__label"
+              >Comment
+              <textarea
+                class="modal-form__input"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+            <div>
+              <input type="checkbox" />
+              <label for=""
+                ><span><a href=""></a></span
+              ></label>
+            </div>
+
+            <button type="submit" class="modal-form__submit primary-button">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!--  -->
     <!--  -->
