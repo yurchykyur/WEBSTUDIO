@@ -813,7 +813,7 @@
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <!-- is-hidden -->
       <div class="modal__window">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -846,7 +846,7 @@
               </li>
               <li class="modal-form__item">
                 <label class="modal-form__label" for="user-phone">Phone</label>
-                <div>
+                <div class="modal-form__inner">
                   <input
                     class="modal-form__input"
                     type="tel"
@@ -863,7 +863,7 @@
               </li>
               <li class="modal-form__item">
                 <label class="modal-form__label" for="user-email">Email</label>
-                <div>
+                <div class="modal-form__inner">
                   <input
                     class="modal-form__input"
                     type="email"
@@ -878,19 +878,33 @@
               </li>
             </ul>
 
-            <label class="modal-form__label"
+            <label class="modal-form__label-textarea"
               >Comment
               <textarea
-                class="modal-form__input"
+                class="modal-form__textarea"
                 name="user-comment"
                 placeholder="Text input"
               ></textarea>
             </label>
-            <div>
-              <input type="checkbox" />
-              <label for=""
-                ><span><a href=""></a></span
-              ></label>
+
+            <div class="modal-form__checkbox-wrapper">
+              <input
+                class="modal-form__checkbox visually-hidden"
+                type="checkbox"
+                name="user-policy"
+                id="user-policy"
+              />
+              <label for="user-policy" class="modal-form__checkbox-label"
+                ><span class="custom__checkbox"
+                  ><svg class="custom__checkbox-on" width="10" height="8">
+                    <use href="./img/icons.svg#icon-check-on"></use></svg></span
+                ><span class="modal-form__policy"
+                  >I accept the terms and conditions of the
+                  <a href="" target="_blank" class="modal-form__link"
+                    >Privacy Policy</a
+                  ></span
+                ></label
+              >
             </div>
 
             <button type="submit" class="modal-form__submit primary-button">
