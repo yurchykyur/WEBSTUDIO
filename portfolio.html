@@ -33,12 +33,10 @@
           >
           <ul class="navigation__list">
             <li class="navigation__list-item">
-              <a class="navigation__list-link current" href="./index.html"
-                >Studio</a
-              >
+              <a class="navigation__list-link" href="./index.html">Studio</a>
             </li>
             <li class="navigation__list-item">
-              <a class="navigation__list-link" href="./portfolio.html"
+              <a class="navigation__list-link current" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
@@ -78,7 +76,7 @@
         </address>
       </div>
 
-      <!-- mobile-menu -->
+      <!-- ==================== mobile-menu ====================== -->
 
       <div class="mobile-menu js-menu-container" id="mobile-menu">
         <!-- is-open -->
@@ -189,10 +187,119 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <div></div>
-          <div></div>
+      <section class="portfolio section">
+        <div class="portfolio-container container">
+          <h1 class="visually-hidden">Portfolio card</h1>
+          <ul class="portfolio-buttons__list">
+            <li class="portfolio-buttons__item">
+              <button
+                class="portfolio-buttons__btn secondary-button"
+                type="button"
+              >
+                All
+              </button>
+            </li>
+            <li class="portfolio-buttons__item">
+              <button
+                class="portfolio-buttons__btn secondary-button"
+                type="button"
+              >
+                Web Site
+              </button>
+            </li>
+            <li class="portfolio-buttons__item">
+              <button
+                class="portfolio-buttons__btn secondary-button"
+                type="button"
+              >
+                App
+              </button>
+            </li>
+            <li class="portfolio-buttons__item">
+              <button
+                class="portfolio-buttons__btn secondary-button"
+                type="button"
+              >
+                Design
+              </button>
+            </li>
+            <li class="portfolio-buttons__item">
+              <button
+                class="portfolio-buttons__btn secondary-button"
+                type="button"
+              >
+                Marketing
+              </button>
+            </li>
+          </ul>
+          <div class="portfolio__card">
+            <ul class="card__list">
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px )"
+                      srcset="
+                        ./img/banking_app_interface_concept-desktop.webp     1x,
+                        ./img/banking_app_interface_concept-desktop-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/banking_app_interface_concept-tablet.webp     1x,
+                        ./img/banking_app_interface_concept-tablet-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/banking_app_interface_concept-mobile.webp     1x,
+                        ./img/banking_app_interface_concept-mobile-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <source
+                      srcset="
+                        ./img/banking_app_interface_concept-desktop.jpg     1x,
+                        ./img/banking_app_interface_concept-desktop-@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/banking_app_interface_concept-tablet.jpg     1x,
+                        ./img/banking_app_interface_concept-tablet-@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/banking_app_interface_concept-mobile.jpg     1x,
+                        ./img/banking_app_interface_concept-mobile-@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="card__img"
+                      src="./images/banking_app_interface_concept-mobile.jpg"
+                      alt="Banking App Interface Concept"
+                      width="100%"
+                      height="100%"
+                    />
+                  </picture>
+                  <div clss="card__text">
+                    <h2 class="card__title">Banking App Interface Concept</h2>
+                    <p class="card__content">App</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

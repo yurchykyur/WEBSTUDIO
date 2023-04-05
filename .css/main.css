@@ -146,6 +146,25 @@ body {
   background-color: var(--pressed-state-color-ocean);
 }
 
+.secondary-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color-iris);
+  background: var(--light-color-cloud);
+  border: 1px solid var(--accent-color-cornflower);
+  border-radius: 4px;
+  -webkit-transition: background-color var(--transition-250-cubic), color var(--transition-250-cubic), border-color var(--transition-250-cubic);
+  transition: background-color var(--transition-250-cubic), color var(--transition-250-cubic), border-color var(--transition-250-cubic);
+}
+.secondary-button:hover, .secondary-button:focus {
+  color: var(--text-color-white);
+  background-color: var(--pressed-state-color-ocean);
+  border-color: transparent;
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1360,5 +1379,79 @@ body {
   .footer-subscribe {
     width: 453px;
     margin-left: 78px;
+  }
+}
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.portfolio-buttons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: calc(var(--gap) * 2) calc(var(--gap) * 3);
+  width: 270px;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+}
+
+.portfolio-buttons__btn {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: 40px;
+  padding: 8px 16px;
+}
+
+.card__item {
+  max-width: 396px;
+}
+
+.card__link {
+  -webkit-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+          box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card__text {
+  padding: 16px 32px;
+  border: 1px solid #F4F4FD;
+  border-top: none;
+}
+
+.card__title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color-navy-blue);
+}
+
+.card__content {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .portfolio-buttons__list {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
   }
 }/*# sourceMappingURL=main.css.map */
