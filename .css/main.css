@@ -685,11 +685,11 @@ body {
 
 .navigation__logo {
   display: block;
-  padding: 25px 0;
+  padding: 25px 0 23px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.167;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color-iris);
@@ -723,6 +723,9 @@ body {
 @media screen and (min-width: 768px) {
   .mobile-menu__btn-open {
     display: none;
+  }
+  .navigation__logo {
+    padding: 25px 0;
   }
   .navigation__list {
     display: -webkit-box;
