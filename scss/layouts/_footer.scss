@@ -49,6 +49,14 @@
     color: var(--text-color-white);
 }
 
+.footer-social__link {
+
+    &:hover,
+    &:focus {
+        background-color: var(--success-color-green);
+    }
+}
+
 .footer-subscribe {
     width: 100%;
 }

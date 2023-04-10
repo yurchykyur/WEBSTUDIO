@@ -1232,6 +1232,10 @@ body {
   color: var(--text-color-white);
 }
 
+.footer-social__link:hover, .footer-social__link:focus {
+  background-color: var(--success-color-green);
+}
+
 .footer-subscribe {
   width: 100%;
 }
